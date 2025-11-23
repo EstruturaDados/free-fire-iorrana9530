@@ -58,13 +58,14 @@ void listar() {
 int main() {
     int op;
     do {
-        printf("\n1.Inserir  2.Remover  3.Listar  0.Sair\nOpcao: ");
+        printf("\n1.Inserir  2.Remover  3.Listar 4.Buscar  0.Sair\nOpcao: ");
         scanf("%d", &op);
 
         switch (op) {
             case 1: inserir(); break;
             case 2: remover(); break;
             case 3: listar(); break;
+            case 4: listar(); break;
         }
     } while (op != 0);
 
